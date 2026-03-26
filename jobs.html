@@ -40,10 +40,327 @@
 
     <div class="container">
         <!-- Hero Section -->
-        <header class="hero">
+        <header class="page-hero">
             <h1 class="fade-up">Startup Jobs</h1>
-            <p class="fade-up delay-1">Content coming soon...</p>
+            <p class="fade-up delay-1">Explore opportunities at the fastest growing tech companies in Southeast Asia.</p>
         </header>
+
+        <!-- Search & Filter Controls -->
+        <section class="jobs-controls fade-up delay-2">
+            <div class="search-bar glass-panel">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                <input type="text" id="jobSearch" placeholder="Search by job title or keyword...">
+            </div>
+            <div class="filter-row" style="margin-top: 15px;">
+                <select id="roleFilter" class="glass-select">
+                    <option value="all">Any Role</option>
+                    <option value="engineering">Engineering</option>
+                    <option value="design">Design</option>
+                    <option value="marketing">Marketing</option>
+                    <option value="sales">Sales</option>
+                    <option value="operations">Operations</option>
+                </select>
+                <select id="locationFilter" class="glass-select">
+                    <option value="all">Any Location</option>
+                    <option value="hcmc">Ho Chi Minh City</option>
+                    <option value="hanoi">Hanoi</option>
+                    <option value="remote">Remote</option>
+                </select>
+            </div>
+        </section>
+
+        <!-- Spotlight Section -->
+        <section class="job-spotlight fade-up">
+            <h2 class="section-title">Hiring Fast</h2>
+            <div class="spotlight-grid">
+                <div class="spotlight-card glass-panel" style="border-top: 3px solid #FF2B6D;">
+                    <div class="company-logo" style="background: linear-gradient(135deg, #FF2B6D, #BE003B);">M</div>
+                    <h3>MoMo</h3>
+                    <p>Building the financial infrastructure for 50 million Vietnamese users.</p>
+                    <a href="#" class="view-jobs">View open roles &rarr;</a>
+                </div>
+                <div class="spotlight-card glass-panel" style="border-top: 3px solid #ff9966;">
+                    <div class="company-logo" style="background: linear-gradient(135deg, #ff9966, #ff5e62);">S</div>
+                    <h3>Sky Mavis</h3>
+                    <p>The pioneer in bleeding-edge Web3 gaming and blockchain infrastructure.</p>
+                    <a href="#" class="view-jobs">View open roles &rarr;</a>
+                </div>
+                <div class="spotlight-card glass-panel" style="border-top: 3px solid #00b09b;">
+                    <div class="company-logo" style="background: linear-gradient(135deg, #00b09b, #96c93d);">T</div>
+                    <h3>Tiki</h3>
+                    <p>Premier e-commerce ecosystem bringing fast logistics to millions.</p>
+                    <a href="#" class="view-jobs">View open roles &rarr;</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Jobs List -->
+        <section class="jobs-list fade-up">
+            <h2 class="section-title">Latest Openings</h2>
+            <div class="jobs-container" id="jobsGrid">
+                
+                <div class="job-row glass-panel" data-role="engineering" data-location="hcmc">
+                    <div class="job-main">
+                        <div class="job-company"><div class="mini-logo" style="background: #FF2B6D;">M</div><span>MoMo</span></div>
+                        <h3 class="job-title">Senior Backend Engineer (Golang)</h3>
+                        <div class="job-meta">
+                            <span class="role-pill engineering">Engineering</span>
+                            <span class="location">Ho Chi Minh City</span>
+                            <span class="salary">$3,000 - $5,000 / mo</span>
+                        </div>
+                    </div>
+                    <button class="btn-primary">Apply</button>
+                </div>
+
+                <div class="job-row glass-panel" data-role="design" data-location="remote">
+                    <div class="job-main">
+                        <div class="job-company"><div class="mini-logo" style="background: #ff5e62;">S</div><span>Sky Mavis</span></div>
+                        <h3 class="job-title">Product Designer (Web3)</h3>
+                        <div class="job-meta">
+                            <span class="role-pill design">Design</span>
+                            <span class="location remote-badge">Remote</span>
+                            <span class="salary">$2,000 - $4,000 / mo</span>
+                        </div>
+                    </div>
+                    <button class="btn-primary">Apply</button>
+                </div>
+
+                <div class="job-row glass-panel" data-role="marketing" data-location="hanoi">
+                    <div class="job-main">
+                        <div class="job-company"><div class="mini-logo" style="background: #11998e;">K</div><span>KiotViet</span></div>
+                        <h3 class="job-title">Growth Marketing Manager</h3>
+                        <div class="job-meta">
+                            <span class="role-pill marketing">Marketing</span>
+                            <span class="location">Hanoi</span>
+                            <span class="salary">$1,500 - $2,500 / mo</span>
+                        </div>
+                    </div>
+                    <button class="btn-primary">Apply</button>
+                </div>
+
+                <div class="job-row glass-panel" data-role="sales" data-location="hcmc">
+                    <div class="job-main">
+                        <div class="job-company"><div class="mini-logo" style="background: #8E2DE2;">B</div><span>Base.vn</span></div>
+                        <h3 class="job-title">Enterprise Account Executive</h3>
+                        <div class="job-meta">
+                            <span class="role-pill sales">Sales</span>
+                            <span class="location">Ho Chi Minh City</span>
+                            <span class="salary">$1,000 + Commission</span>
+                        </div>
+                    </div>
+                    <button class="btn-primary">Apply</button>
+                </div>
+
+                <div class="job-row glass-panel" data-role="engineering" data-location="hanoi">
+                    <div class="job-main">
+                        <div class="job-company"><div class="mini-logo" style="background: #1fa2ff;">V</div><span>VNPay</span></div>
+                        <h3 class="job-title">iOS Developer</h3>
+                        <div class="job-meta">
+                            <span class="role-pill engineering">Engineering</span>
+                            <span class="location">Hanoi</span>
+                            <span class="salary">$1,800 - $3,500 / mo</span>
+                        </div>
+                    </div>
+                    <button class="btn-primary">Apply</button>
+                </div>
+
+                <div class="job-row glass-panel" data-role="operations" data-location="remote">
+                    <div class="job-main">
+                        <div class="job-company"><div class="mini-logo" style="background: #C04848;">D</div><span>Dat Bike</span></div>
+                        <h3 class="job-title">Supply Chain Operations Manager</h3>
+                        <div class="job-meta">
+                            <span class="role-pill operations">Operations</span>
+                            <span class="location remote-badge">Remote</span>
+                            <span class="salary">$2,000 - $3,500 / mo</span>
+                        </div>
+                    </div>
+                    <button class="btn-primary">Apply</button>
+                </div>
+
+                <div class="job-row glass-panel" data-role="design" data-location="hcmc">
+                    <div class="job-main">
+                        <div class="job-company"><div class="mini-logo" style="background: #00b09b;">T</div><span>Tiki</span></div>
+                        <h3 class="job-title">UX Researcher</h3>
+                        <div class="job-meta">
+                            <span class="role-pill design">Design</span>
+                            <span class="location">Ho Chi Minh City</span>
+                            <span class="salary">$1,500 - $2,500 / mo</span>
+                        </div>
+                    </div>
+                    <button class="btn-primary">Apply</button>
+                </div>
+
+                <div class="job-row glass-panel" data-role="engineering" data-location="remote">
+                    <div class="job-main">
+                        <div class="job-company"><div class="mini-logo" style="background: #314755;">K</div><span>Kyber Net.</span></div>
+                        <h3 class="job-title">Smart Contract Auditor</h3>
+                        <div class="job-meta">
+                            <span class="role-pill engineering">Engineering</span>
+                            <span class="location remote-badge">Remote</span>
+                            <span class="salary">$4,000 - $8,000 / mo</span>
+                        </div>
+                    </div>
+                    <button class="btn-primary">Apply</button>
+                </div>
+
+                <div class="job-row glass-panel" data-role="engineering" data-location="hanoi">
+                    <div class="job-main">
+                        <div class="job-company"><div class="mini-logo" style="background: #00B4DB;">F</div><span>Finhay</span></div>
+                        <h3 class="job-title">Frontend Engineer (React)</h3>
+                        <div class="job-meta">
+                            <span class="role-pill engineering">Engineering</span>
+                            <span class="location">Hanoi</span>
+                            <span class="salary">$1,200 - $2,500 / mo</span>
+                        </div>
+                    </div>
+                    <button class="btn-primary">Apply</button>
+                </div>
+
+                <div class="job-row glass-panel" data-role="sales" data-location="remote">
+                    <div class="job-main">
+                        <div class="job-company"><div class="mini-logo" style="background: #f2709c;">C</div><span>Classin</span></div>
+                        <h3 class="job-title">B2B Edtech Sales Representative</h3>
+                        <div class="job-meta">
+                            <span class="role-pill sales">Sales</span>
+                            <span class="location remote-badge">Remote</span>
+                            <span class="salary">$800 + Commission</span>
+                        </div>
+                    </div>
+                    <button class="btn-primary">Apply</button>
+                </div>
+
+                <div class="job-row glass-panel" data-role="marketing" data-location="hcmc">
+                    <div class="job-main">
+                        <div class="job-company"><div class="mini-logo" style="background: #FF8008;">M</div><span>Mfast</span></div>
+                        <h3 class="job-title">Performance Marketing Specialist</h3>
+                        <div class="job-meta">
+                            <span class="role-pill marketing">Marketing</span>
+                            <span class="location">Ho Chi Minh City</span>
+                            <span class="salary">$1,000 - $1,800 / mo</span>
+                        </div>
+                    </div>
+                    <button class="btn-primary">Apply</button>
+                </div>
+
+                <div class="job-row glass-panel" data-role="operations" data-location="hanoi">
+                    <div class="job-main">
+                        <div class="job-company"><div class="mini-logo" style="background: #eb3349;">O</div><span>OneMount</span></div>
+                        <h3 class="job-title">Logistics Strategy Analyst</h3>
+                        <div class="job-meta">
+                            <span class="role-pill operations">Operations</span>
+                            <span class="location">Hanoi</span>
+                            <span class="salary">$1,500 - $2,200 / mo</span>
+                        </div>
+                    </div>
+                    <button class="btn-primary">Apply</button>
+                </div>
+
+                <div class="job-row glass-panel" data-role="engineering" data-location="hcmc">
+                    <div class="job-main">
+                        <div class="job-company"><div class="mini-logo" style="background: #2b5876;">T</div><span>Trusting Soc.</span></div>
+                        <h3 class="job-title">Machine Learning Engineer</h3>
+                        <div class="job-meta">
+                            <span class="role-pill engineering">Engineering</span>
+                            <span class="location">Ho Chi Minh City</span>
+                            <span class="salary">$2,500 - $5,000 / mo</span>
+                        </div>
+                    </div>
+                    <button class="btn-primary">Apply</button>
+                </div>
+
+                <div class="job-row glass-panel" data-role="design" data-location="hanoi">
+                    <div class="job-main">
+                        <div class="job-company"><div class="mini-logo" style="background: #0ba360;">S</div><span>Selex Motors</span></div>
+                        <h3 class="job-title">Industrial Designer</h3>
+                        <div class="job-meta">
+                            <span class="role-pill design">Design</span>
+                            <span class="location">Hanoi</span>
+                            <span class="salary">$1,800 - $3,000 / mo</span>
+                        </div>
+                    </div>
+                    <button class="btn-primary">Apply</button>
+                </div>
+
+                <div class="job-row glass-panel" data-role="engineering" data-location="remote">
+                    <div class="job-main">
+                        <div class="job-company"><div class="mini-logo" style="background: #1A2980;">A</div><span>Ancient8</span></div>
+                        <h3 class="job-title">Rust Developer</h3>
+                        <div class="job-meta">
+                            <span class="role-pill engineering">Engineering</span>
+                            <span class="location remote-badge">Remote</span>
+                            <span class="salary">$3,500 - $6,000 / mo</span>
+                        </div>
+                    </div>
+                    <button class="btn-primary">Apply</button>
+                </div>
+
+                <div class="job-row glass-panel" data-role="marketing" data-location="hcmc">
+                    <div class="job-main">
+                        <div class="job-company"><div class="mini-logo" style="background: #f12711;">L</div><span>Loship</span></div>
+                        <h3 class="job-title">Brand Marketing Manager</h3>
+                        <div class="job-meta">
+                            <span class="role-pill marketing">Marketing</span>
+                            <span class="location">Ho Chi Minh City</span>
+                            <span class="salary">$1,500 - $2,500 / mo</span>
+                        </div>
+                    </div>
+                    <button class="btn-primary">Apply</button>
+                </div>
+
+                <div class="job-row glass-panel" data-role="sales" data-location="hanoi">
+                    <div class="job-main">
+                        <div class="job-company"><div class="mini-logo" style="background: #FF4B2B;">E</div><span>Ecomobi</span></div>
+                        <h3 class="job-title">SaaS Partnerships Lead</h3>
+                        <div class="job-meta">
+                            <span class="role-pill sales">Sales</span>
+                            <span class="location">Hanoi</span>
+                            <span class="salary">$1,500 + Commission</span>
+                        </div>
+                    </div>
+                    <button class="btn-primary">Apply</button>
+                </div>
+
+                <div class="job-row glass-panel" data-role="operations" data-location="hcmc">
+                    <div class="job-main">
+                        <div class="job-company"><div class="mini-logo" style="background: #fceabb;">I</div><span>Infina</span></div>
+                        <h3 class="job-title">Customer Experience Head</h3>
+                        <div class="job-meta">
+                            <span class="role-pill operations">Operations</span>
+                            <span class="location">Ho Chi Minh City</span>
+                            <span class="salary">$1,800 - $3,000 / mo</span>
+                        </div>
+                    </div>
+                    <button class="btn-primary">Apply</button>
+                </div>
+
+                <div class="job-row glass-panel" data-role="engineering" data-location="remote">
+                    <div class="job-main">
+                        <div class="job-company"><div class="mini-logo" style="background: #00C9FF;">G</div><span>Got It</span></div>
+                        <h3 class="job-title">Data Engineer</h3>
+                        <div class="job-meta">
+                            <span class="role-pill engineering">Engineering</span>
+                            <span class="location remote-badge">Remote</span>
+                            <span class="salary">$2,000 - $4,000 / mo</span>
+                        </div>
+                    </div>
+                    <button class="btn-primary">Apply</button>
+                </div>
+
+                <div class="job-row glass-panel" data-role="engineering" data-location="hanoi">
+                    <div class="job-main">
+                        <div class="job-company"><div class="mini-logo" style="background: #a8e063;">G</div><span>GIMO</span></div>
+                        <h3 class="job-title">DevSecOps Engineer</h3>
+                        <div class="job-meta">
+                            <span class="role-pill engineering">Engineering</span>
+                            <span class="location">Hanoi</span>
+                            <span class="salary">$2,000 - $3,500 / mo</span>
+                        </div>
+                    </div>
+                    <button class="btn-primary">Apply</button>
+                </div>
+
+            </div>
+        </section>
     </div>
 
     <!-- Footer -->

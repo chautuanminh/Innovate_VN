@@ -3,7 +3,7 @@
 :root {
     /* Color Palette */
     --bg-dark: #050d1a;
-    --glass-bg: rgba(8, 18, 45, 0.45);
+    --glass-bg: rgba(15, 25, 60, 0.6);
     --glass-border: rgba(100, 160, 255, 0.18);
     --glass-shadow: 0 8px 32px rgba(0, 30, 100, 0.4), inset 0 1px 0 rgba(255,255,255,0.06);
     --accent-orange: #FF6B2B;
@@ -42,6 +42,30 @@ a {
 h1, h2, h3, h4 {
     font-family: var(--font-display);
     font-weight: 700;
+}
+
+/* Page Hero */
+.page-hero {
+    padding-top: 180px;
+    padding-bottom: 60px;
+    text-align: center;
+}
+
+.page-hero h1 {
+    font-size: 4rem;
+    line-height: 1.1;
+    margin-bottom: 20px;
+    background: linear-gradient(180deg, #FFFFFF 0%, #A0B3D6 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.page-hero p {
+    font-size: 1.25rem;
+    color: var(--text-secondary);
+    max-width: 600px;
+    margin: 0 auto;
 }
 
 /* Animated Aurora Background */

@@ -1,0 +1,173 @@
+/* Layout structure */
+.apply-container {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    gap: 40px;
+    margin-bottom: 100px;
+}
+
+/* Form Styles */
+.main-form {
+    padding: 40px;
+}
+
+.form-title {
+    font-size: 1.5rem;
+    margin-bottom: 25px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    color: var(--accent-orange);
+}
+
+.mt-4 {
+    margin-top: 40px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 25px;
+}
+
+.form-row {
+    display: flex;
+    gap: 20px;
+}
+
+.form-row .form-group {
+    flex: 1;
+}
+
+.form-group label {
+    font-size: 0.95rem;
+    font-weight: 600;
+}
+
+.req {
+    color: #ef4444;
+}
+
+.glass-input, .glass-select {
+    background: rgba(0, 0, 0, 0.2);
+    border: 1px solid var(--glass-border);
+    border-radius: var(--radius-sm);
+    padding: 12px 15px;
+    color: white;
+    font-family: var(--font-body);
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s ease, background 0.3s ease;
+    width: 100%;
+}
+
+.glass-input:focus, .glass-select:focus {
+    border-color: var(--accent-orange);
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.glass-select {
+    appearance: none;
+    background-image: url('data:image/svg+xml;utf8,<svg fill="white" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/><path d="M0 0h24v24H0z" fill="none"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 8px center;
+}
+
+.glass-select option {
+    background: var(--bg-dark);
+    color: white;
+}
+
+textarea.glass-input {
+    resize: vertical;
+}
+
+.form-actions {
+    margin-top: 30px;
+}
+
+.form-submit {
+    width: 100%;
+    padding: 15px;
+    font-size: 1.1rem;
+}
+
+/* Right Column Info */
+.info-card {
+    padding: 30px;
+    position: sticky;
+    top: 100px;
+}
+
+.info-card h3 {
+    font-size: 1.6rem;
+    margin-bottom: 15px;
+}
+
+.info-card p {
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+/* Timeline */
+.timeline {
+    position: relative;
+    padding-left: 20px;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 4px;
+    top: 10px;
+    bottom: 20px;
+    width: 2px;
+    background: rgba(255, 107, 43, 0.3);
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.timeline-item:last-child {
+    margin-bottom: 0;
+}
+
+.timeline-dot {
+    position: absolute;
+    left: -20px;
+    top: 5px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: var(--accent-orange);
+}
+
+.timeline-content h4 {
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+}
+
+.timeline-content p {
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+/* Mobile responsive */
+@media (max-width: 900px) {
+    .apply-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .info-card {
+        position: static;
+        margin-bottom: 20px;
+        order: -1;
+    }
+    
+    .form-row {
+        flex-direction: column;
+        gap: 0;
+    }
+}

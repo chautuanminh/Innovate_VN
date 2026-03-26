@@ -1,0 +1,165 @@
+/* Controls */
+.jobs-controls {
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.search-bar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 15px 20px;
+    gap: 15px;
+    border-radius: var(--radius-lg);
+}
+
+.search-bar input {
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 1.1rem;
+    width: 100%;
+    outline: none;
+    font-family: var(--font-body);
+}
+
+.filter-row {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.glass-select {
+    appearance: none;
+    background: rgba(15, 25, 60, 0.6);
+    border: 1px solid var(--glass-border);
+    border-radius: var(--radius-sm);
+    color: white;
+    padding: 10px 30px 10px 15px;
+    font-size: 0.95rem;
+    outline: none;
+    font-family: var(--font-body);
+    /* basic dropdown arrow */
+    background-image: url('data:image/svg+xml;utf8,<svg fill="white" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/><path d="M0 0h24v24H0z" fill="none"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 8px center;
+}
+
+/* Spotlight Section */
+.job-spotlight {
+    margin-bottom: 60px;
+}
+
+.section-title {
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.spotlight-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.spotlight-card {
+    padding: 30px;
+    transition: transform 0.3s ease;
+}
+
+.spotlight-card:hover { transform: translateY(-5px); box-shadow: 0 10px 30px rgba(0,0,0,0.4); }
+.spotlight-card .company-logo {
+    width: 60px; height: 60px; border-radius: 12px; color: white; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; font-weight: 700; margin-bottom: 20px;
+}
+.spotlight-card h3 { font-size: 1.5rem; margin-bottom: 15px; }
+.spotlight-card p { color: var(--text-secondary); line-height: 1.5; margin-bottom: 20px; }
+.view-jobs { color: var(--accent-orange); font-weight: 600; text-decoration: none; }
+
+/* Jobs List */
+.jobs-list {
+    margin-bottom: 100px;
+}
+
+.jobs-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.job-row {
+    padding: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.job-row:hover {
+    transform: translateX(5px);
+    background: rgba(30, 45, 90, 0.6);
+}
+
+.job-main {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.job-company {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 600;
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+}
+
+.mini-logo {
+    width: 24px; height: 24px; border-radius: 4px; color: white; display: flex; align-items: center; justify-content: center; font-size: 0.8rem; font-weight: bold;
+}
+
+.job-title {
+    font-size: 1.3rem;
+    margin: 0;
+}
+
+.job-meta {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    font-size: 0.9rem;
+    color: rgba(255,255,255,0.6);
+}
+
+.role-pill {
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 0.8rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+.role-pill.engineering { background: rgba(59, 130, 246, 0.2); color: #60a5fa; }
+.role-pill.design { background: rgba(236, 72, 153, 0.2); color: #f472b6; }
+.role-pill.marketing { background: rgba(245, 158, 11, 0.2); color: #fbbf24; }
+.role-pill.sales { background: rgba(16, 185, 129, 0.2); color: #34d399; }
+.role-pill.operations { background: rgba(139, 92, 246, 0.2); color: #a78bfa; }
+
+.remote-badge {
+    color: #4ade80;
+    font-weight: 600;
+}
+
+.salary {
+    border-left: 1px solid rgba(255,255,255,0.2);
+    padding-left: 15px;
+}
+
+@media (max-width: 768px) {
+    .job-row { flex-direction: column; align-items: flex-start; gap: 20px; }
+    .salary { border-left: none; padding-left: 0; }
+    .job-meta { gap: 10px; }
+}

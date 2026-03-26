@@ -40,10 +40,430 @@
 
     <div class="container">
         <!-- Hero Section -->
-        <header class="hero">
+        <header class="page-hero">
             <h1 class="fade-up">Portfolio Companies</h1>
-            <p class="fade-up delay-1">Content coming soon...</p>
+            <p class="fade-up delay-1">Discover the startups we've backed across Vietnam and Southeast Asia.</p>
         </header>
+
+        <!-- Search and Filters -->
+        <section class="directory-controls fade-up delay-2">
+            <div class="search-bar glass-panel">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                <input type="text" id="companySearch" placeholder="Search companies...">
+            </div>
+            
+            <div class="filter-row">
+                <div class="filter-chips" id="sectorFilters">
+                    <button class="chip active" data-filter="all">All</button>
+                    <button class="chip" data-filter="fintech">Fintech</button>
+                    <button class="chip" data-filter="ai">AI</button>
+                    <button class="chip" data-filter="consumer">Consumer</button>
+                    <button class="chip" data-filter="b2b">B2B SaaS</button>
+                    <button class="chip" data-filter="health">Healthcare</button>
+                    <button class="chip" data-filter="edtech">Edtech</button>
+                </div>
+                
+                <div class="dropdown glass-panel">
+                    <select id="batchFilter">
+                        <option value="all">Any Batch</option>
+                        <option value="w24">W24</option>
+                        <option value="s23">S23</option>
+                        <option value="w23">W23</option>
+                        <option value="s22">S22</option>
+                        <option value="w22">W22</option>
+                        <option value="s21">S21</option>
+                    </select>
+                </div>
+            </div>
+        </section>
+
+        <!-- Companies Grid -->
+        <section class="companies-directory fade-up delay-3" id="companiesGrid">
+            <!-- Populated via JS or statically. We will populate statically to mirror requirements -->
+            <!-- 1. MoMo -->
+            <div class="dir-card glass-panel" data-sector="fintech" data-batch="s20">
+                <div class="dir-card-header">
+                    <div class="dir-logo" style="background: linear-gradient(135deg, #FF2B6D, #BE003B);">M</div>
+                    <div class="dir-meta">
+                        <h3 class="dir-name">MoMo</h3>
+                        <div class="dir-pills">
+                            <span class="batch-pill">S20</span>
+                            <span class="sector-pill">Fintech</span>
+                        </div>
+                    </div>
+                </div>
+                <p class="dir-desc">Vietnam's absolute leading super app and mobile wallet.</p>
+                <div class="dir-location"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg> Ho Chi Minh City</div>
+            </div>
+
+            <!-- 2. VNPay -->
+            <div class="dir-card glass-panel" data-sector="fintech" data-batch="w19">
+                <div class="dir-card-header">
+                    <div class="dir-logo" style="background: linear-gradient(135deg, #1fa2ff, #12d8fa);">V</div>
+                    <div class="dir-meta">
+                        <h3 class="dir-name">VNPay</h3>
+                        <div class="dir-pills">
+                            <span class="batch-pill">W19</span>
+                            <span class="sector-pill">Fintech</span>
+                        </div>
+                    </div>
+                </div>
+                <p class="dir-desc">B2B payment solutions provider and nationwide QR network.</p>
+                <div class="dir-location"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg> Hanoi</div>
+            </div>
+
+            <!-- 3. Tiki -->
+            <div class="dir-card glass-panel" data-sector="consumer" data-batch="w18">
+                <div class="dir-card-header">
+                    <div class="dir-logo" style="background: linear-gradient(135deg, #00b09b, #96c93d);">T</div>
+                    <div class="dir-meta">
+                        <h3 class="dir-name">Tiki</h3>
+                        <div class="dir-pills">
+                            <span class="batch-pill">W18</span>
+                            <span class="sector-pill">Consumer</span>
+                        </div>
+                    </div>
+                </div>
+                <p class="dir-desc">Premier e-commerce ecosystem in Vietnam delivering 2-hour shipping.</p>
+                <div class="dir-location"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg> Ho Chi Minh City</div>
+            </div>
+
+            <!-- 4. Sky Mavis -->
+            <div class="dir-card glass-panel" data-sector="consumer" data-batch="s21">
+                <div class="dir-card-header">
+                    <div class="dir-logo" style="background: linear-gradient(135deg, #ff9966, #ff5e62);">S</div>
+                    <div class="dir-meta">
+                        <h3 class="dir-name">Sky Mavis</h3>
+                        <div class="dir-pills">
+                            <span class="batch-pill">S21</span>
+                            <span class="sector-pill">Consumer</span>
+                        </div>
+                    </div>
+                </div>
+                <p class="dir-desc">Creators of Axie Infinity and Ronin Network blockchain.</p>
+                <div class="dir-location"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg> Ho Chi Minh City</div>
+            </div>
+
+            <!-- 5. VNLIFE -->
+            <div class="dir-card glass-panel" data-sector="fintech" data-batch="s19">
+                <div class="dir-card-header">
+                    <div class="dir-logo" style="background: linear-gradient(135deg, #4facfe, #00f2fe);">V</div>
+                    <div class="dir-meta">
+                        <h3 class="dir-name">VNLIFE</h3>
+                        <div class="dir-pills">
+                            <span class="batch-pill">S19</span>
+                            <span class="sector-pill">Fintech</span>
+                        </div>
+                    </div>
+                </div>
+                <p class="dir-desc">O2O technology ecosystem helping traditional businesses undergo digital transformation.</p>
+                <div class="dir-location"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg> Hanoi</div>
+            </div>
+
+            <!-- 6. Loship -->
+            <div class="dir-card glass-panel" data-sector="consumer" data-batch="w22">
+                <div class="dir-card-header">
+                    <div class="dir-logo" style="background: linear-gradient(135deg, #f12711, #f5af19);">L</div>
+                    <div class="dir-meta">
+                        <h3 class="dir-name">Loship</h3>
+                        <div class="dir-pills">
+                            <span class="batch-pill">W22</span>
+                            <span class="sector-pill">Consumer</span>
+                        </div>
+                    </div>
+                </div>
+                <p class="dir-desc">Fastest hyper-local delivery and food tech platform in Vietnam.</p>
+                <div class="dir-location"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg> Ho Chi Minh City</div>
+            </div>
+
+            <!-- 7. KiotViet -->
+            <div class="dir-card glass-panel" data-sector="b2b" data-batch="w20">
+                <div class="dir-card-header">
+                    <div class="dir-logo" style="background: linear-gradient(135deg, #11998e, #38ef7d);">K</div>
+                    <div class="dir-meta">
+                        <h3 class="dir-name">KiotViet</h3>
+                        <div class="dir-pills">
+                            <span class="batch-pill">W20</span>
+                            <span class="sector-pill">B2B SaaS</span>
+                        </div>
+                    </div>
+                </div>
+                <p class="dir-desc">Cloud-based POS and store management system for 100,000+ MSMEs.</p>
+                <div class="dir-location"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg> Hanoi</div>
+            </div>
+
+            <!-- 8. Base.vn -->
+            <div class="dir-card glass-panel" data-sector="b2b" data-batch="s19">
+                <div class="dir-card-header">
+                    <div class="dir-logo" style="background: linear-gradient(135deg, #8E2DE2, #4A00E0);">B</div>
+                    <div class="dir-meta">
+                        <h3 class="dir-name">Base.vn</h3>
+                        <div class="dir-pills">
+                            <span class="batch-pill">S19</span>
+                            <span class="sector-pill">B2B SaaS</span>
+                        </div>
+                    </div>
+                </div>
+                <p class="dir-desc">Unified enterprise management platform streamlining operations for SMEs.</p>
+                <div class="dir-location"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg> Hanoi</div>
+            </div>
+
+            <!-- 9. Ecomobi -->
+            <div class="dir-card glass-panel" data-sector="b2b" data-batch="s20">
+                <div class="dir-card-header">
+                    <div class="dir-logo" style="background: linear-gradient(135deg, #FF4B2B, #FF416C);">E</div>
+                    <div class="dir-meta">
+                        <h3 class="dir-name">Ecomobi</h3>
+                        <div class="dir-pills">
+                            <span class="batch-pill">S20</span>
+                            <span class="sector-pill">B2B SaaS</span>
+                        </div>
+                    </div>
+                </div>
+                <p class="dir-desc">Social selling platform enabling KOLs and creators to monetize their audience.</p>
+                <div class="dir-location"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg> Ho Chi Minh City</div>
+            </div>
+
+            <!-- 10. Got It -->
+            <div class="dir-card glass-panel" data-sector="ai" data-batch="w16">
+                <div class="dir-card-header">
+                    <div class="dir-logo" style="background: linear-gradient(135deg, #00C9FF, #92FE9D);">G</div>
+                    <div class="dir-meta">
+                        <h3 class="dir-name">Got It</h3>
+                        <div class="dir-pills">
+                            <span class="batch-pill">W16</span>
+                            <span class="sector-pill">AI</span>
+                        </div>
+                    </div>
+                </div>
+                <p class="dir-desc">AI-powered knowledge-as-a-service platform connecting users with experts instantly.</p>
+                <div class="dir-location"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg> Silicon Valley / Hanoi</div>
+            </div>
+
+            <!-- 11. Elsa Speak -->
+            <div class="dir-card glass-panel" data-sector="edtech" data-batch="w17">
+                <div class="dir-card-header">
+                    <div class="dir-logo" style="background: linear-gradient(135deg, #667eea, #764ba2);">E</div>
+                    <div class="dir-meta">
+                        <h3 class="dir-name">Elsa Speak</h3>
+                        <div class="dir-pills">
+                            <span class="batch-pill">W17</span>
+                            <span class="sector-pill">Edtech</span>
+                        </div>
+                    </div>
+                </div>
+                <p class="dir-desc">AI-assisted language learning app that improves English pronunciation.</p>
+                <div class="dir-location"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg> San Francisco / HCMC</div>
+            </div>
+
+            <!-- 12. Ancient8 -->
+            <div class="dir-card glass-panel" data-sector="consumer" data-batch="w23">
+                <div class="dir-card-header">
+                    <div class="dir-logo" style="background: linear-gradient(135deg, #1A2980, #26D0CE);">A</div>
+                    <div class="dir-meta">
+                        <h3 class="dir-name">Ancient8</h3>
+                        <div class="dir-pills">
+                            <span class="batch-pill">W23</span>
+                            <span class="sector-pill">Consumer</span>
+                        </div>
+                    </div>
+                </div>
+                <p class="dir-desc">Building the infrastructure and community for Web3 gaming.</p>
+                <div class="dir-location"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg> Ho Chi Minh City</div>
+            </div>
+
+            <!-- 13. Kyber Network -->
+            <div class="dir-card glass-panel" data-sector="fintech" data-batch="s18">
+                <div class="dir-card-header">
+                    <div class="dir-logo" style="background: linear-gradient(135deg, #314755, #26a0da);">K</div>
+                    <div class="dir-meta">
+                        <h3 class="dir-name">Kyber Network</h3>
+                        <div class="dir-pills">
+                            <span class="batch-pill">S18</span>
+                            <span class="sector-pill">Fintech</span>
+                        </div>
+                    </div>
+                </div>
+                <p class="dir-desc">Multi-chain crypto trading and liquidity hub empowering decentralized applications.</p>
+                <div class="dir-location"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg> Hanoi</div>
+            </div>
+
+            <!-- 14. Finhay -->
+            <div class="dir-card glass-panel" data-sector="fintech" data-batch="w20">
+                <div class="dir-card-header">
+                    <div class="dir-logo" style="background: linear-gradient(135deg, #00B4DB, #0083B0);">F</div>
+                    <div class="dir-meta">
+                        <h3 class="dir-name">Finhay</h3>
+                        <div class="dir-pills">
+                            <span class="batch-pill">W20</span>
+                            <span class="sector-pill">Fintech</span>
+                        </div>
+                    </div>
+                </div>
+                <p class="dir-desc">Digital investment platform bridging retail investors to financial products.</p>
+                <div class="dir-location"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg> Hanoi</div>
+            </div>
+
+            <!-- 15. Infina -->
+            <div class="dir-card glass-panel" data-sector="fintech" data-batch="s21">
+                <div class="dir-card-header">
+                    <div class="dir-logo" style="background: linear-gradient(135deg, #fceabb, #f8b500); color: #000;">I</div>
+                    <div class="dir-meta">
+                        <h3 class="dir-name">Infina</h3>
+                        <div class="dir-pills">
+                            <span class="batch-pill">S21</span>
+                            <span class="sector-pill">Fintech</span>
+                        </div>
+                    </div>
+                </div>
+                <p class="dir-desc">Fractional investing app empowering millennials to build wealth.</p>
+                <div class="dir-location"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg> Ho Chi Minh City</div>
+            </div>
+
+            <!-- 16. Mfast -->
+            <div class="dir-card glass-panel" data-sector="fintech" data-batch="s22">
+                <div class="dir-card-header">
+                    <div class="dir-logo" style="background: linear-gradient(135deg, #FF8008, #FFC837);">M</div>
+                    <div class="dir-meta">
+                        <h3 class="dir-name">Mfast</h3>
+                        <div class="dir-pills">
+                            <span class="batch-pill">S22</span>
+                            <span class="sector-pill">Fintech</span>
+                        </div>
+                    </div>
+                </div>
+                <p class="dir-desc">Agent banking network providing financial products to underbanked regions.</p>
+                <div class="dir-location"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg> Ho Chi Minh City</div>
+            </div>
+
+            <!-- 17. Trusting Social -->
+            <div class="dir-card glass-panel" data-sector="ai" data-batch="w18">
+                <div class="dir-card-header">
+                    <div class="dir-logo" style="background: linear-gradient(135deg, #2b5876, #4e4376);">T</div>
+                    <div class="dir-meta">
+                        <h3 class="dir-name">Trusting Social</h3>
+                        <div class="dir-pills">
+                            <span class="batch-pill">W18</span>
+                            <span class="sector-pill">AI</span>
+                        </div>
+                    </div>
+                </div>
+                <p class="dir-desc">AI-based credit scoring utilizing telecom and alternative data.</p>
+                <div class="dir-location"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg> Singapore / HCMC</div>
+            </div>
+
+            <!-- 18. Nano Technologies -->
+            <div class="dir-card glass-panel" data-sector="fintech" data-batch="w22">
+                <div class="dir-card-header">
+                    <div class="dir-logo" style="background: linear-gradient(135deg, #3a7bd5, #3a6073);">N</div>
+                    <div class="dir-meta">
+                        <h3 class="dir-name">Nano Technologies</h3>
+                        <div class="dir-pills">
+                            <span class="batch-pill">W22</span>
+                            <span class="sector-pill">Fintech</span>
+                        </div>
+                    </div>
+                </div>
+                <p class="dir-desc">Pioneering earned-wage access solutions for factory workers in Vietnam.</p>
+                <div class="dir-location"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg> Ho Chi Minh City</div>
+            </div>
+
+            <!-- 19. GIMO -->
+            <div class="dir-card glass-panel" data-sector="fintech" data-batch="s23">
+                <div class="dir-card-header">
+                    <div class="dir-logo" style="background: linear-gradient(135deg, #a8e063, #56ab2f);">G</div>
+                    <div class="dir-meta">
+                        <h3 class="dir-name">GIMO</h3>
+                        <div class="dir-pills">
+                            <span class="batch-pill">S23</span>
+                            <span class="sector-pill">Fintech</span>
+                        </div>
+                    </div>
+                </div>
+                <p class="dir-desc">On-demand pay solution helping workers achieve financial resilience.</p>
+                <div class="dir-location"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg> Hanoi</div>
+            </div>
+
+            <!-- 20. Dat Bike -->
+            <div class="dir-card glass-panel" data-sector="consumer" data-batch="w21">
+                <div class="dir-card-header">
+                    <div class="dir-logo" style="background: linear-gradient(135deg, #C04848, #480048);">D</div>
+                    <div class="dir-meta">
+                        <h3 class="dir-name">Dat Bike</h3>
+                        <div class="dir-pills">
+                            <span class="batch-pill">W21</span>
+                            <span class="sector-pill">Consumer</span>
+                        </div>
+                    </div>
+                </div>
+                <p class="dir-desc">High-performance electric motorcycles designed and built in Vietnam.</p>
+                <div class="dir-location"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg> Ho Chi Minh City</div>
+            </div>
+
+            <!-- 21. Selex Motors -->
+            <div class="dir-card glass-panel" data-sector="b2b" data-batch="w23">
+                <div class="dir-card-header">
+                    <div class="dir-logo" style="background: linear-gradient(135deg, #0ba360, #3cba92);">S</div>
+                    <div class="dir-meta">
+                        <h3 class="dir-name">Selex Motors</h3>
+                        <div class="dir-pills">
+                            <span class="batch-pill">W23</span>
+                            <span class="sector-pill">B2B SaaS</span>
+                        </div>
+                    </div>
+                </div>
+                <p class="dir-desc">Smart electric scooters and battery swapping networks for logistics.</p>
+                <div class="dir-location"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg> Hanoi</div>
+            </div>
+
+            <!-- 22. Educa -->
+            <div class="dir-card glass-panel" data-sector="edtech" data-batch="s21">
+                <div class="dir-card-header">
+                    <div class="dir-logo" style="background: linear-gradient(135deg, #1fa2ff, #12d8fa);">E</div>
+                    <div class="dir-meta">
+                        <h3 class="dir-name">Educa</h3>
+                        <div class="dir-pills">
+                            <span class="batch-pill">S21</span>
+                            <span class="sector-pill">Edtech</span>
+                        </div>
+                    </div>
+                </div>
+                <p class="dir-desc">High-quality English learning programs for primary school students.</p>
+                <div class="dir-location"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg> Hanoi</div>
+            </div>
+
+            <!-- 23. Classin -->
+            <div class="dir-card glass-panel" data-sector="edtech" data-batch="w24">
+                <div class="dir-card-header">
+                    <div class="dir-logo" style="background: linear-gradient(135deg, #f2709c, #ff9472);">C</div>
+                    <div class="dir-meta">
+                        <h3 class="dir-name">Classin</h3>
+                        <div class="dir-pills">
+                            <span class="batch-pill">W24</span>
+                            <span class="sector-pill">Edtech</span>
+                        </div>
+                    </div>
+                </div>
+                <p class="dir-desc">B2B edtech infrastructure providing interactive virtual classrooms.</p>
+                <div class="dir-location"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg> Ho Chi Minh City</div>
+            </div>
+
+            <!-- 24. OneMount -->
+            <div class="dir-card glass-panel" data-sector="b2b" data-batch="w20">
+                <div class="dir-card-header">
+                    <div class="dir-logo" style="background: linear-gradient(135deg, #eb3349, #f45c43);">O</div>
+                    <div class="dir-meta">
+                        <h3 class="dir-name">OneMount</h3>
+                        <div class="dir-pills">
+                            <span class="batch-pill">W20</span>
+                            <span class="sector-pill">B2B SaaS</span>
+                        </div>
+                    </div>
+                </div>
+                <p class="dir-desc">Digitizing retail distribution across mom-and-pop stores nationwide.</p>
+                <div class="dir-location"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg> Hanoi</div>
+            </div>
+        </section>
     </div>
 
     <!-- Footer -->

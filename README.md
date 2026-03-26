@@ -25,20 +25,35 @@ Since this project consists of plain HTML, CSS, and JS files without any build f
 
 ### 1. Home Page (`index.html`)
 > The sleek, animated home page with sticky glassmorphism navbar and portfolio highlights.
-![Home Page Demo](https://via.placeholder.com/1200x600.png?text=Home+Page+Demo)
+![Home Page Demo](demo/homepage.png)
 
 ### 2. About Page (`about.html`)
 > Learn more about the vision behind Innovate Vietnam.
-![About Page Demo](https://via.placeholder.com/1200x600.png?text=About+Page+Demo)
+![About Page Demo](demo/about.png)
 
 ### 3. Companies Portfolio (`companies.html`)
 > A detailed grid view of the startups we have funded and scaled.
-![Companies Demo](https://via.placeholder.com/1200x600.png?text=Companies+Page+Demo)
+![Companies Demo](demo/companies.png)
 
 ### 4. Library (`library.html`)
 > Startup essays, guides, and essential resources for founders.
-![Library Demo](https://via.placeholder.com/1200x600.png?text=Library+Page+Demo)
+![Library Demo](demo/library.png)
 
+### 5. Partners (`partners.html`)
+> Lead, strategic, and global venture partners in the IV network.
+![Partners Demo](demo/partners.png)
+
+### 6. Resources (`resources.html`)
+> Open-source playbooks, SAFE templates, and startup tools.
+![Resources Demo](demo/resources.png)
+
+### 7. Jobs (`jobs.html`)
+> Open positions at IV portfolio companies.
+![Jobs Demo](demo/startup_jobs.png)
+
+### 8. Apply (`apply.html`)
+> Application form to join the next batch.
+![Apply Demo](demo/apply.png)
 
 ## 📂 Architecture
 

@@ -40,10 +40,138 @@
 
     <div class="container">
         <!-- Hero Section -->
-        <header class="hero">
+        <header class="page-hero">
             <h1 class="fade-up">Apply to Innovate Vietnam</h1>
-            <p class="fade-up delay-1">Content coming soon...</p>
+            <p class="fade-up delay-1">Applications close July 31, 2025 · Funding decisions by August 15</p>
         </header>
+
+        <div class="apply-container fade-up delay-2">
+            <!-- Left Column: Form -->
+            <div class="apply-form-col">
+                <form class="glass-panel main-form">
+                    <h2 class="form-title">Company Info</h2>
+                    
+                    <div class="form-group">
+                        <label>Company Name <span class="req">*</span></label>
+                        <input type="text" class="glass-input" required>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Website URL</label>
+                            <input type="url" class="glass-input" placeholder="https://">
+                        </div>
+                        <div class="form-group">
+                            <label>Founding Team Size <span class="req">*</span></label>
+                            <input type="number" class="glass-input" min="1" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Stage <span class="req">*</span></label>
+                            <select class="glass-select" required>
+                                <option value="">Select Stage...</option>
+                                <option value="idea">Idea / Pre-product</option>
+                                <option value="mvp">Building MVP</option>
+                                <option value="launch">Launched / Early Revenue</option>
+                                <option value="growth">Growth / Scaling</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Sector <span class="req">*</span></label>
+                            <select class="glass-select" required>
+                                <option value="">Select Sector...</option>
+                                <option value="fintech">Fintech</option>
+                                <option value="health">Healthcare</option>
+                                <option value="saas">B2B SaaS</option>
+                                <option value="consumer">Consumer</option>
+                                <option value="web3">Web3 / Crypto</option>
+                                <option value="deeptech">Deeptech / AI</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <h2 class="form-title mt-4">The Business</h2>
+                    
+                    <div class="form-group">
+                        <label>What is your company going to make? <span class="req">*</span></label>
+                        <textarea class="glass-input" rows="3" placeholder="Describe your product in 2-3 sentences max." required></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Why now? <span class="req">*</span></label>
+                        <textarea class="glass-input" rows="3" placeholder="Why is this the right time for this product to exist?" required></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label>How much have you raised to date? <span class="req">*</span></label>
+                        <input type="text" class="glass-input" placeholder="e.g. $0, or $50k from friends & family" required>
+                    </div>
+
+                    <h2 class="form-title mt-4">Founders</h2>
+
+                    <div class="form-group">
+                        <label>Founder Names & LinkedIn URLs <span class="req">*</span></label>
+                        <textarea class="glass-input" rows="3" placeholder="Jane Doe - linkedin.com/in/janedoe" required></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Primary Email <span class="req">*</span></label>
+                        <input type="email" class="glass-input" required>
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="submit" class="btn-primary form-submit">Submit Application</button>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Right Column: Info & Timeline -->
+            <div class="apply-info-col">
+                <div class="info-card glass-panel">
+                    <h3>What to Expect</h3>
+                    <p>Our application process is designed to be fast, transparent, and respectful of founders' time.</p>
+                    
+                    <div class="timeline mt-4">
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <h4>Submit Application</h4>
+                                <p>Fill out this form. We read every single application.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <h4>Application Review</h4>
+                                <p>Our partners review your answers. We may reach out with quick follow-up questions via email.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <h4>Partner Interview</h4>
+                                <p>A 15-minute intensive interview with 2-3 IV partners via Zoom or in-person in HCMC.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <h4>Decision & Funding</h4>
+                                <p>We call you the same day as your interview. If accepted, we wire $150K within 48 hours.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="info-card glass-panel mt-4" style="background: rgba(30, 45, 90, 0.4);">
+                    <h4 style="color: var(--accent-orange); margin-bottom: 10px;">Have questions?</h4>
+                    <p style="font-size: 0.95rem; color: var(--text-secondary); margin: 0;">Check out our <a href="resources.html" style="color: white; font-weight: 600;">Resources page</a> for detailed FAQs regarding the accelerator program, SAFE funding, and remote participation details.</p>
+                </div>
+            </div>
+        </div>
     </div>
 
     <!-- Footer -->

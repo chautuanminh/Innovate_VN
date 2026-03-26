@@ -1,0 +1,133 @@
+/* Tier Sections */
+.partner-tier {
+    margin-bottom: 80px;
+}
+
+.tier-title.text-center {
+    font-size: 2rem;
+    margin-bottom: 40px;
+    color: var(--accent-orange);
+    text-align: center;
+}
+
+.partner-grid {
+    display: grid;
+    gap: 20px;
+}
+
+/* Lead Cards */
+.partner-grid.lead {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.partner-grid.lead .partner-card {
+    padding: 50px 30px;
+}
+
+.partner-grid.lead .partner-logo {
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+}
+
+/* Strategic Cards */
+.partner-grid.strategic {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+/* Global Cards */
+.partner-grid.global {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+
+.partner-card {
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.partner-card:hover {
+    transform: translateY(-5px);
+    border-color: rgba(100, 160, 255, 0.4);
+}
+
+.partner-logo {
+    font-size: 1.4rem;
+    font-weight: 700;
+    font-family: var(--font-display);
+}
+
+.partner-desc {
+    color: var(--text-secondary);
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+/* CTA Form */
+.partner-cta {
+    margin-bottom: 100px;
+}
+
+.cta-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    padding: 50px;
+}
+
+.cta-info h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.cta-info p {
+    color: var(--text-secondary);
+    font-size: 1.15rem;
+    line-height: 1.6;
+}
+
+.partner-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-group label {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: rgba(255,255,255,0.8);
+}
+
+.glass-input {
+    background: rgba(0, 0, 0, 0.2);
+    border: 1px solid var(--glass-border);
+    border-radius: var(--radius-sm);
+    padding: 12px 15px;
+    color: white;
+    font-family: var(--font-body);
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.glass-input:focus {
+    border-color: var(--accent-orange);
+}
+
+/* Mobile responsive */
+@media (max-width: 900px) {
+    .cta-container {
+        grid-template-columns: 1fr;
+        padding: 30px;
+    }
+}
