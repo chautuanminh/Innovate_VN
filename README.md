@@ -2,6 +2,13 @@
 
 Welcome to the Innovate Vietnam website! This project is built using pure Vanilla HTML, CSS, and JavaScript. 
 
+## 🌐 Live Demo
+
+The website is live and can be accessed at:
+**[https://landingpage-pearl-nu.vercel.app](https://landingpage-pearl-nu.vercel.app)**
+
+*Note: Clean URLs are enabled (e.g., use `/about` instead of `/about.html`).*
+
 ## 🚀 How to Run
 
 Since this project consists of plain HTML, CSS, and JS files without any build frameworks, you can simply run it directly in your browser!
